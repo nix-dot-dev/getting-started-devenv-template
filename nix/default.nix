@@ -15,7 +15,7 @@ in
 
   # provided by shell.nix
   devTools = {
-    inherit (pkgs) niv;
+    inherit (pkgs) niv pre-commit;
   };
 
   # to be built by github actions
