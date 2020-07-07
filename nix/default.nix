@@ -8,7 +8,7 @@ let
   # gitignore.nix 
   gitignoreSource = (import sources."gitignore.nix" { inherit (pkgs) lib; }).gitignoreSource;
 
-  src = gitignoreSource ./.;
+  src = gitignoreSource ./..;
 in
 {
   inherit pkgs src;
@@ -28,7 +28,7 @@ in
         nix-linter.enable = true;
       };
       # generated files
-      excludes = [ "nix/sources.nix" ];
+      excludes = [ "^nix/sources\.nix$" ];
     };
   };
 }
