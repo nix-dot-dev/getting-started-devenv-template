@@ -12,7 +12,7 @@ Based on [nix.dev](https://nix.dev) tutorials, repository template to get you st
 # Getting started
 
 1. Follow tutorial for [creating a binary cache](https://nix.dev/tutorials/continuous-integration-github-actions.html)
-2. Replace ``mycache`` in ``.github/workflows/test.yml`` with the name of your binary cache
+2. Replace ``nix-getting-started-template`` in ``.github/workflows/test.yml`` with the name of your binary cache
 3. Follow [direnv setup](https://nix.dev/tutorials/declarative-and-reproducible-developer-environments.html#direnv-automatically-activating-the-environment-on-directory-change) and run `direnv allow`
 
 # Future work
