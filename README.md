@@ -2,7 +2,7 @@
 
 Based on [nix.dev](https://nix.dev) tutorials, repository template to get you started with [Nix](https://nixos.org/):
 
-- [niv](https://github.com/nmattia/niv) for painless dependency management (aka pinning)
+- [niv](https://github.com/nmattia/niv) for painless dependency management (aka pinning) and automated daily cronjob to bump dependencies
 - [gitignore.nix](https://github.com/hercules-ci/gitignore.nix) for respecting `.gitignore` when using your project as a source
 - [pre-commit-hooks.nix](https://github.com/cachix/pre-commit-hooks.nix) for running linters (defaults to `shellcheck`, `nix-linter` and `nixpkgs-fmt`) when committing and on the CI
 - [direnv](https://direnv.net/) for automatically loading your developer environment
