@@ -1,0 +1,21 @@
+name: Update niv
+
+on:
+  schedule:
+    # every day at 8am UTC
+    - cron: '0 8 * * *'
+
+jobs:
+  update-dependencies:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.3.1
+    - uses: cachix/install-nix-action@v10
+    - name: Update niv dependancies
+      run: nix run -f . niv -c niv update
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v2.8.1
+      with:
+        commit-message: "chore: update niv dependencies"
+        title: "chore: update niv dependencies"
+        branch: "chore/update-niv-dependencies" 
