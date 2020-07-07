@@ -4,10 +4,10 @@ Based on [nix.dev](https://nix.dev) tutorials, repository template to get you st
 
 - [niv](https://github.com/nmattia/niv) for painless dependency management (aka pinning)
 - [gitignore.nix](https://github.com/hercules-ci/gitignore.nix) for respecting `.gitignore` when using your project as a source
-- [GitHub Actions](https://github.com/features/actions) for CI
-- [dependabot](https://dependabot.com/) for automatically bumping GitHub actions versions
-- [pre-commit-hooks.nix](https://github.com/cachix/pre-commit-hooks.nix) for running linters when committing and on the CI
+- [pre-commit-hooks.nix](https://github.com/cachix/pre-commit-hooks.nix) for running linters (defaults to `shellcheck`, `nix-linter` and `nixpkgs-fmt`) when committing and on the CI
 - [direnv](https://direnv.net/) for automatically loading your developer environment
+- [GitHub Actions](https://github.com/features/actions) for CI
+- [dependabot](https://dependabot.com/) for automatically bumping GitHub Actions versions
 
 # Getting started
 
