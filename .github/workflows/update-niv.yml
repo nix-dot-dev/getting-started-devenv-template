@@ -13,7 +13,7 @@ jobs:
     - uses: cachix/install-nix-action@v10
     - run: nix-shell --run "niv update"
     - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v2.8.1
+      uses: peter-evans/create-pull-request@v3
       with:
         commit-message: "chore: update niv dependencies"
         title: "chore: update niv dependencies"
