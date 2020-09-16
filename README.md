@@ -12,6 +12,7 @@ Based on [nix.dev](https://nix.dev) tutorials, repository template to get you st
 
 1. Follow tutorial for [creating a binary cache](https://nix.dev/tutorials/continuous-integration-github-actions.html)
 2. Replace ``nix-getting-started-template`` in ``.github/workflows/test.yml`` with the name of your binary cache
+3. Add secrets in github for the `CACHIX_SIGNING_KEY` you just created.
 
 ## Using the project
 
