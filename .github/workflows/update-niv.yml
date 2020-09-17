@@ -13,7 +13,8 @@ jobs:
     - uses: cachix/install-nix-action@v10
       with: 
         skip_adding_nixpkgs_channel: true
-    - run: nix-shell --run "niv update"
+    # https://github.com/nmattia/niv/issues/280
+    - run: GITHUB_PATH= nix-shell --run "niv update"
     - uses: cachix/cachix-action@v6
       with:
         name: nix-getting-started-template
