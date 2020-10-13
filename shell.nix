@@ -1,4 +1,4 @@
-{ project ? import ./nix {}
+{ project ? import ./nix { }
 }:
 
 project.pkgs.mkShell {

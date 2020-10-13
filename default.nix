@@ -1,1 +1,1 @@
-(import ./nix {}).ci
+(import ./nix { }).ci
