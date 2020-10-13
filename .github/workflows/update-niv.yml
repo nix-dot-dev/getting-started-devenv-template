@@ -20,7 +20,7 @@ jobs:
         # Only needed for private caches
         #authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
     - run: nix-build
-    - run: nix-shell --run "echo OK"
+    - run: nix-shell --run "pre-commit run -a"
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
