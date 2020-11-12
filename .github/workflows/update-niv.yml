@@ -24,7 +24,6 @@ jobs:
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
-        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         commit-message: "[automation] update niv dependencies"
         title: "[automation] update niv dependencies"
         branch: "automation/update-niv-dependencies"
