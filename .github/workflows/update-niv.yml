@@ -5,6 +5,9 @@ on:
     # every day at 8am UTC
     - cron: '0 8 * * *'
 
+  # can manually trigger this workflow
+  workflow_dispatch:
+
 jobs:
   update-dependencies:
     runs-on: ubuntu-latest
