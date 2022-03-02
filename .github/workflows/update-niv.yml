@@ -12,7 +12,7 @@ jobs:
   update-dependencies:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - uses: cachix/install-nix-action@v16
     # https://github.com/nmattia/niv/issues/280
     - run: GITHUB_PATH= nix-shell --run "niv update"
