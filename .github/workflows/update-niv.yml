@@ -16,7 +16,7 @@ jobs:
     - uses: cachix/install-nix-action@v17
     # https://github.com/nmattia/niv/issues/280
     - run: GITHUB_PATH= nix-shell --run "niv update"
-    - uses: cachix/cachix-action@v10
+    - uses: cachix/cachix-action@v11
       with:
         name: nix-getting-started-template
         signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
