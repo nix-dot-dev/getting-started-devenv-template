@@ -6,7 +6,7 @@ on:
 
 defaults:
   run:
-    shell: devenv shell {0}
+    shell: sh -c "devenv shell {0}"
 
 jobs:
   tests:

@@ -22,7 +22,7 @@
   pre-commit.hooks = {
     shellcheck.enable = true;
     nixpkgs-fmt.enable = true;
-    nix-linter.enable = true;
+    statix.enable = true;
   };
 
   # https://devenv.sh/processes/
