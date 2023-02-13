@@ -24,6 +24,7 @@
     nixpkgs-fmt.enable = true;
     statix.enable = true;
   };
+  pre-commit.excludes = [ "\\.devenv.*" ];
 
   # https://devenv.sh/processes/
   # processes.ping.exec = "ping example.com";
