@@ -13,7 +13,7 @@ jobs:
         name: nix-getting-started-template
         extraPullNames: devenv
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-    - run: nix profile install github:cachix/devenv/v0.2
+    - run: nix profile install github:cachix/devenv/latest
       name: Install devenv.sh
     - run: devenv shell echo ok
     - run: devenv ci
