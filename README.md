@@ -6,7 +6,7 @@ this is a simple to get started.
 ## Getting started
 
 1. [Install Nix and ``devenv``](https://devenv.sh/getting-started/)
-1. Follow tutorial for [creating a binary cache](https://nix.dev/tutorials/continuous-integration-github-actions.html)
+1. Follow tutorial for [creating a binary cache](https://nix.dev/tutorials/nixos/continuous-integration-github-actions)
 2. Replace ``nix-getting-started-template`` in ``.github/workflows/test.yml`` with the name of your binary cache
 
 ## Using the project
